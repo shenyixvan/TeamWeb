@@ -1,0 +1,296 @@
+﻿<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{2CEF09DD-9291-4503-B17E-089E8734117D}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>TeamWebsite</RootNamespace>
+    <AssemblyName>TeamWebsite</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <Use64BitIISExpress />
+    <IISExpressSSLPort>44300</IISExpressSSLPort>
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="BouncyCastle.Crypto, Version=1.9.0.0, Culture=neutral, PublicKeyToken=0e99375e54769942, processorArchitecture=MSIL">
+      <HintPath>packages\Portable.BouncyCastle.1.9.0\lib\net40\BouncyCastle.Crypto.dll</HintPath>
+    </Reference>
+    <Reference Include="Google.Protobuf, Version=3.19.4.0, Culture=neutral, PublicKeyToken=a7d26565bac4d604, processorArchitecture=MSIL">
+      <HintPath>packages\Google.Protobuf.3.19.4\lib\net45\Google.Protobuf.dll</HintPath>
+    </Reference>
+    <Reference Include="K4os.Compression.LZ4, Version=1.2.6.0, Culture=neutral, PublicKeyToken=2186fa9121ef231d, processorArchitecture=MSIL">
+      <HintPath>packages\K4os.Compression.LZ4.1.2.6\lib\net46\K4os.Compression.LZ4.dll</HintPath>
+    </Reference>
+    <Reference Include="K4os.Compression.LZ4.Streams, Version=1.2.6.0, Culture=neutral, PublicKeyToken=2186fa9121ef231d, processorArchitecture=MSIL">
+      <HintPath>packages\K4os.Compression.LZ4.Streams.1.2.6\lib\net46\K4os.Compression.LZ4.Streams.dll</HintPath>
+    </Reference>
+    <Reference Include="K4os.Hash.xxHash, Version=1.0.6.0, Culture=neutral, PublicKeyToken=32cd54395057cec3, processorArchitecture=MSIL">
+      <HintPath>packages\K4os.Hash.xxHash.1.0.6\lib\net46\K4os.Hash.xxHash.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="MySql.Data, Version=8.0.30.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <HintPath>packages\MySql.Data.8.0.30\lib\net452\MySql.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Buffers, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>packages\System.Buffers.4.5.1\lib\net461\System.Buffers.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ComponentModel" />
+    <Reference Include="System.Configuration.Install" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Memory, Version=4.0.1.1, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>packages\System.Memory.4.5.4\lib\net461\System.Memory.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Numerics" />
+    <Reference Include="System.Numerics.Vectors, Version=4.1.4.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>packages\System.Numerics.Vectors.4.5.0\lib\net46\System.Numerics.Vectors.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.CompilerServices.Unsafe, Version=5.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>packages\System.Runtime.CompilerServices.Unsafe.5.0.0\lib\net45\System.Runtime.CompilerServices.Unsafe.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Transactions" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="Ubiety.Dns.Core, Version=2.2.1.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <HintPath>packages\MySql.Data.8.0.30\lib\net452\Ubiety.Dns.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="ZstdNet, Version=1.4.5.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <HintPath>packages\MySql.Data.8.0.30\lib\net452\ZstdNet.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform">
+      <HintPath>packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="admin.aspx" />
+    <Content Include="Css\Home %282%29.css" />
+    <Content Include="Css\login.css" />
+    <Content Include="Global.asax" />
+    <Content Include="Image\2019年国赛证书\孙浩钧-国特.png" />
+    <Content Include="Image\2019年国赛证书\李文阳-国一.png" />
+    <Content Include="Image\2019年国赛证书\王隽鹏-国一.png" />
+    <Content Include="Image\2019年国赛证书\胡立峰-国一.png" />
+    <Content Include="Image\2019年国赛证书\蒋忠禹-国一.png" />
+    <Content Include="Image\2019年国赛证书\陈子健-国一.png" />
+    <Content Include="Image\2020年证书\姚小龙-省一.png" />
+    <Content Include="Image\2020年证书\姜铭叡-省一.png" />
+    <Content Include="Image\2020年证书\胡立峰-国一.png" />
+    <Content Include="Image\2020年证书\陈子健-国二.png" />
+    <Content Include="Image\2021年证书\刘雨欣-省一.jpg" />
+    <Content Include="Image\2021年证书\姜铭睿-省特.png" />
+    <Content Include="Image\2021年证书\杨善鹏-省一.png" />
+    <Content Include="Image\2021年证书\王志强-省特.png" />
+    <Content Include="Image\2021年证书\王永乐-省特.jpg" />
+    <Content Include="Image\2021年证书\董洪林-国二.png" />
+    <Content Include="Image\2021年证书\董秋莹-省一.png" />
+    <Content Include="Image\2021年证书\郭永晟-省一.png" />
+    <Content Include="Image\团队信息\1.ico" />
+    <Content Include="Image\团队信息\bg.jpg" />
+    <Content Include="Image\团队信息\logo.jpg" />
+    <Content Include="Image\团队信息\logo.png" />
+    <Content Include="Image\团队信息\备案图标 .png" />
+    <Content Include="Image\团队信息\微信公众号二维码.jpg" />
+    <Content Include="Image\团队信息\微信小程序二维码.jpg" />
+    <Content Include="Image\团队信息\海报.png" />
+    <Content Include="Image\团队成员\13级\13-宫会彬.png" />
+    <Content Include="Image\团队成员\13级\13-韩韬.png" />
+    <Content Include="Image\团队成员\14级\14-付联杰.png" />
+    <Content Include="Image\团队成员\14级\14-冯越.png" />
+    <Content Include="Image\团队成员\14级\14-商昌林.png" />
+    <Content Include="Image\团队成员\14级\14-孟凡强.png" />
+    <Content Include="Image\团队成员\14级\14-张亮.png" />
+    <Content Include="Image\团队成员\14级\14-张展明.png" />
+    <Content Include="Image\团队成员\14级\14-李佳茜.png" />
+    <Content Include="Image\团队成员\14级\14-李友堂.png" />
+    <Content Include="Image\团队成员\14级\14-李思宇.png" />
+    <Content Include="Image\团队成员\14级\14-李泽亨.png" />
+    <Content Include="Image\团队成员\14级\14-杜华军.png" />
+    <Content Include="Image\团队成员\15级\15-傅恩卿.png" />
+    <Content Include="Image\团队成员\15级\15-金锐.png" />
+    <Content Include="Image\团队成员\15级\15-韦大云.png" />
+    <Content Include="Image\团队成员\16级\16-李文阳.png" />
+    <Content Include="Image\团队成员\16级\16-王浩.png" />
+    <Content Include="Image\团队成员\16级\16-白春皓.png" />
+    <Content Include="Image\团队成员\16级\16-皮佳艳.png" />
+    <Content Include="Image\团队成员\16级\16-罗迪.png" />
+    <Content Include="Image\团队成员\16级\16-董艺铭.png" />
+    <Content Include="Image\团队成员\16级\16-蒋忠禹.png" />
+    <Content Include="Image\团队成员\17级\17-孙浩钧.png" />
+    <Content Include="Image\团队成员\17级\17-李万兴.png" />
+    <Content Include="Image\团队成员\17级\17-李苏庆.png" />
+    <Content Include="Image\团队成员\18级\18-杨善鹏.png" />
+    <Content Include="Image\团队成员\18级\18-王隽鹏.png" />
+    <Content Include="Image\团队成员\18级\18-胡立峰.jpg" />
+    <Content Include="Image\团队成员\18级\18-郭永晟.jpg" />
+    <Content Include="Image\团队成员\18级\18-陈子健.jpg" />
+    <Content Include="Image\团队成员\19级\19-冷维.jpg" />
+    <Content Include="Image\团队成员\19级\19-姚小龙.jpg" />
+    <Content Include="Image\团队成员\19级\19-姜铭叡.jpg" />
+    <Content Include="Image\团队成员\19级\19-李天济.jpg" />
+    <Content Include="Image\团队成员\19级\19-汤海祺.jpg" />
+    <Content Include="Image\团队成员\19级\19-王志强.jpg" />
+    <Content Include="Image\团队成员\19级\19-董洪林.jpg" />
+    <Content Include="Image\团队成员\19级\19-董秋莹.jpg" />
+    <Content Include="Image\团队成员\20级\20-刘雨欣.jpg" />
+    <Content Include="Image\团队成员\20级\20-李德龙.jpg" />
+    <Content Include="Image\团队成员\20级\20-杨镇源.jpg" />
+    <Content Include="Image\团队成员\20级\20-沈逸轩.jpg" />
+    <Content Include="Image\团队成员\20级\20-王永乐.jpg" />
+    <Content Include="Image\团队成员\合影.JPG" />
+    <Content Include="Image\团队成员\老师\老师.png" />
+    <Content Include="Image\团队风采\19宣讲活动合影.png" />
+    <Content Include="Image\团队风采\20元旦小品.png" />
+    <Content Include="Image\团队风采\20宣讲会.JPG" />
+    <Content Include="Image\团队风采\20宣讲会2.JPG" />
+    <Content Include="Image\团队风采\21元旦晚会.JPG" />
+    <Content Include="Image\团队风采\21西门子杯比赛.jpg" />
+    <Content Include="Image\团队风采\21西门子杯省赛 .jpg" />
+    <Content Include="Image\团队风采\21辽沈纪念馆合影.JPG" />
+    <Content Include="Image\团队风采\吃瓜.png" />
+    <Content Include="Image\团队风采\比赛现场.jpg" />
+    <Content Include="Image\团队风采\电气工程合影.JPG" />
+    <Content Include="Image\团队风采\配水池合影.JPG" />
+    <Content Include="login.aspx" />
+    <Content Include="Web.config" />
+    <Content Include="home.aspx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="admin.aspx.cs">
+      <DependentUpon>admin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin.aspx.designer.cs">
+      <DependentUpon>admin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="login.aspx.cs">
+      <DependentUpon>login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="login.aspx.designer.cs">
+      <DependentUpon>login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="home.aspx.cs">
+      <DependentUpon>home.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="home.aspx.designer.cs">
+      <DependentUpon>home.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="..\YFBLL\YFBLL.csproj">
+      <Project>{b0f67383-398b-436b-ba61-faaf2b0c2325}</Project>
+      <Name>YFBLL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\YFDAL\YFDAL.csproj">
+      <Project>{78d520d2-c289-423a-87e8-c0b6e892b86c}</Project>
+      <Name>YFDAL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\YFModel\YFModel.csproj">
+      <Project>{e987f96d-d2ac-4971-bead-2d48af1b89ad}</Project>
+      <Name>YFModel</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\YFUtility\YFUtility.csproj">
+      <Project>{fd2173a0-137a-4430-b0fd-825952ebb1fa}</Project>
+      <Name>YFUtility</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>50950</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>https://localhost:44300/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>这台计算机上缺少此项目引用的 NuGet 程序包。使用“NuGet 程序包还原”可下载这些程序包。有关更多信息，请参见 http://go.microsoft.com/fwlink/?LinkID=322105。缺少的文件是 {0}。</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', 'packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

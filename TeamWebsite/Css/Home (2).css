@@ -1,0 +1,988 @@
+body {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    background-image: url("../Image/团队信息/bg.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 145%;
+    background-position: center;
+    /* justify-content: center; */
+    /* position: relative; */
+}
+
+header {
+    text-align: center;
+    background-color: rgba(0,0,0,0.4);
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 10%;
+    width: 100%;
+    overflow: hidden;
+    backdrop-filter: blur(5px);
+    z-index: 10;
+}
+
+nav {
+    display: inline-flex;
+}
+
+.blank {
+    width: 400px;
+}
+
+.zzcx-1 {
+    margin-top: 15px;
+    font-size: 30px;
+    color: white;
+    letter-spacing: 0px;
+}
+
+    .zzcx-1 span {
+        animation: animate linear 2000ms infinite;
+    }
+
+        .zzcx-1 span:nth-child(1n) {
+            animation-delay: 0s;
+        }
+
+        .zzcx-1 span:nth-child(2n) {
+            animation-delay: 200ms;
+        }
+
+@keyframes animate {
+    0% {
+        opacity: 1;
+        text-shadow: 2px 1px 2px rgb(4, 217, 245),3px 1px 2px #fbff01, 0 0 1em rgb(255, 0, 255), 0 0 0.2em rgb(98, 0, 255);
+    }
+
+    10% {
+        opacity: 0.8;
+        text-shadow: 2px 1px 2px rgb(4, 217, 245),3px 1px 2px #fbff01, 0 0 1em rgb(255, 0, 255), 0 0 0.2em rgb(98, 0, 255);
+    }
+
+    20% {
+        opacity: 1;
+        text-shadow: 2px 1px 2px rgb(4, 217, 245),3px 1px 2px #fbff01, 0 0 1em rgb(255, 0, 255), 0 0 0.2em rgb(98, 0, 255);
+    }
+
+    30% {
+        opacity: 1;
+        text-shadow: 2px 1px 2px rgb(4, 217, 245),3px 1px 2px #fbff01, 0 0 1em rgb(255, 0, 255), 0 0 0.2em rgb(98, 0, 255);
+    }
+
+    40% {
+        opacity: 1;
+        text-shadow: 2px 1px 2px rgb(4, 217, 245),3px 1px 2px #fbff01, 0 0 1em rgb(255, 0, 255), 0 0 0.2em rgb(98, 0, 255);
+    }
+
+    50% {
+        opacity: 1;
+        text-shadow: 2px 1px 2px rgb(4, 217, 245),3px 1px 2px #fbff01,0 0 1em rgb(255, 0, 255), 0 0 0.2em rgb(98, 0, 255);
+    }
+
+    60% {
+        opacity: 0.6;
+        text-shadow: 2px 1px 2px rgb(4, 217, 245),3px 1px 2px #fbff01, 0 0 1em rgb(255, 0, 255), 0 0 0.2em rgb(98, 0, 255);
+    }
+
+    70% {
+        opacity: 1;
+        text-shadow: 2px 1px 2px rgb(4, 217, 245),3px 1px 2px #fbff01, 0 0 1em rgb(255, 0, 255), 0 0 0.2em rgb(98, 0, 255);
+    }
+
+    80% {
+        opacity: 1;
+        text-shadow: 2px 1px 2px rgb(4, 217, 245),3px 1px 2px #fbff01,0 0 1em rgb(255, 0, 255), 0 0 0.2em rgb(98, 0, 255);
+    }
+
+    90% {
+        opacity: 1;
+        text-shadow: 2px 1px 2px rgb(4, 217, 245),3px 1px 2px #fbff01, 0 0 1em rgb(255, 0, 255), 0 0 0.2em rgb(98, 0, 255);
+    }
+
+    100% {
+        opacity: 1;
+        text-shadow: 2px 1px 2px rgb(4, 217, 245),3px 1px 2px #fbff01, 0 0 1em rgb(255, 0, 255), 0 0 0.2em rgb(98, 0, 255);
+    }
+}
+
+a {
+    color: white;
+    font-size: 23px;
+    text-decoration: none;
+}
+
+    a::after {
+        color: white;
+    }
+
+    a:hover {
+        text-decoration: underline;
+        text-shadow: 1px 1px 2px #00E6F6,-3px -3px 7px #cd00f6;
+    }
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+li {
+    display: inline-block;
+    margin: 20px;
+    padding: 0;
+}
+
+.logo {
+    margin-top: 85px;
+    text-align: center;
+}
+
+.zzcx-2 {
+    margin-top: 0%;
+    text-align: center;
+    font-size: 45px;
+    color: white;
+    letter-spacing: 1em;
+}
+
+    .zzcx-2 span {
+        animation: animate linear 2000ms infinite;
+    }
+
+        .zzcx-2 span:nth-child(1n) {
+            animation-delay: 0s;
+        }
+
+        .zzcx-2 span:nth-child(2n) {
+            animation-delay: 200ms;
+        }
+
+@keyframes animate {
+    0% {
+        opacity: 1;
+        text-shadow: 2px 1px 2px rgb(4, 217, 245),3px 1px 2px #fbff01, 0 0 1em rgb(255, 0, 255), 0 0 0.2em rgb(98, 0, 255);
+    }
+
+    10% {
+        opacity: 0.8;
+        text-shadow: 2px 1px 2px rgb(4, 217, 245),3px 1px 2px #fbff01, 0 0 1em rgb(255, 0, 255), 0 0 0.2em rgb(98, 0, 255);
+    }
+
+    20% {
+        opacity: 1;
+        text-shadow: 2px 1px 2px rgb(4, 217, 245),3px 1px 2px #fbff01, 0 0 1em rgb(255, 0, 255), 0 0 0.2em rgb(98, 0, 255);
+    }
+
+    30% {
+        opacity: 1;
+        text-shadow: 2px 1px 2px rgb(4, 217, 245),3px 1px 2px #fbff01, 0 0 1em rgb(255, 0, 255), 0 0 0.2em rgb(98, 0, 255);
+    }
+
+    40% {
+        opacity: 1;
+        text-shadow: 2px 1px 2px rgb(4, 217, 245),3px 1px 2px #fbff01, 0 0 1em rgb(255, 0, 255), 0 0 0.2em rgb(98, 0, 255);
+    }
+
+    50% {
+        opacity: 1;
+        text-shadow: 2px 1px 2px rgb(4, 217, 245),3px 1px 2px #fbff01,0 0 1em rgb(255, 0, 255), 0 0 0.2em rgb(98, 0, 255);
+    }
+
+    60% {
+        opacity: 0.6;
+        text-shadow: 2px 1px 2px rgb(4, 217, 245),3px 1px 2px #fbff01, 0 0 1em rgb(255, 0, 255), 0 0 0.2em rgb(98, 0, 255);
+    }
+
+    70% {
+        opacity: 1;
+        text-shadow: 2px 1px 2px rgb(4, 217, 245),3px 1px 2px #fbff01, 0 0 1em rgb(255, 0, 255), 0 0 0.2em rgb(98, 0, 255);
+    }
+
+    80% {
+        opacity: 1;
+        text-shadow: 2px 1px 2px rgb(4, 217, 245),3px 1px 2px #fbff01,0 0 1em rgb(255, 0, 255), 0 0 0.2em rgb(98, 0, 255);
+    }
+
+    90% {
+        opacity: 1;
+        text-shadow: 2px 1px 2px rgb(4, 217, 245),3px 1px 2px #fbff01, 0 0 1em rgb(255, 0, 255), 0 0 0.2em rgb(98, 0, 255);
+    }
+
+    100% {
+        opacity: 1;
+        text-shadow: 2px 1px 2px rgb(4, 217, 245),3px 1px 2px #fbff01, 0 0 1em rgb(255, 0, 255), 0 0 0.2em rgb(98, 0, 255);
+    }
+}
+
+.title-1 {
+    color: white;
+    text-shadow: 2px 1px 2px rgb(4, 40, 245),3px 1px 2px #fbff01, 0 0 1em rgb(255, 0, 255), 0 0 0.2em rgb(98, 0, 255);
+    font-size: 60px;
+    margin-top: 180px;
+    margin-left: 80px;
+}
+
+.intro {
+    background: linear-gradient(45deg, transparent 3%, #00E6F6 3%, #00E6F6 5%, #fbff01 5%);
+    color: rgb(6, 6, 99);
+    border-style: none;
+    width: 70%;
+    margin-top: 100px;
+    margin-left: auto;
+    padding: 10px;
+    line-height: 200%;
+    letter-spacing: 200%;
+}
+
+button, button::after {
+    width: 290px;
+    height: 56px;
+    font-size: 28px;
+    font-style: italic;
+    background: linear-gradient(45deg, transparent 5%, #FF013C 5%);
+    border: 0;
+    color: #fff;
+    letter-spacing: 7px;
+    line-height: 48px;
+    box-shadow: 6px 0px 0px #00E6F6;
+    outline: transparent;
+    position: relative;
+}
+
+    button::after {
+        --slice-0: inset(50% 50% 50% 50%);
+        --slice-1: inset(80% -6px 0 0);
+        --slice-2: inset(50% -6px 30% 0);
+        --slice-3: inset(10% -6px 85% 0);
+        --slice-4: inset(40% -6px 43% 0);
+        --slice-5: inset(80% -6px 5% 0);
+        content: '加入我们';
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: linear-gradient(45deg, transparent 3%, #00E6F6 3%, #00E6F6 5%, #FF013C 5%);
+        text-shadow: -3px -3px 0px #F8F005, 3px 3px 0px #00E6F6;
+        clip-path: var(--slice-0);
+    }
+
+    button:hover::after {
+        animation: 1s glitch;
+        animation-timing-function: steps(2, end);
+    }
+
+@keyframes glitch {
+    0% {
+        clip-path: var(--slice-1);
+        transform: translate(-20px, -10px);
+    }
+
+    10% {
+        clip-path: var(--slice-3);
+        transform: translate(10px, 10px);
+    }
+
+    20% {
+        clip-path: var(--slice-1);
+        transform: translate(-10px, 10px);
+    }
+
+    30% {
+        clip-path: var(--slice-3);
+        transform: translate(0px, 5px);
+    }
+
+    40% {
+        clip-path: var(--slice-2);
+        transform: translate(-5px, 0px);
+    }
+
+    50% {
+        clip-path: var(--slice-3);
+        transform: translate(5px, 0px);
+    }
+
+    60% {
+        clip-path: var(--slice-4);
+        transform: translate(5px, 10px);
+    }
+
+    70% {
+        clip-path: var(--slice-2);
+        transform: translate(-10px, 10px);
+    }
+
+    80% {
+        clip-path: var(--slice-5);
+        transform: translate(20px, -10px);
+    }
+
+    90% {
+        clip-path: var(--slice-1);
+        transform: translate(-10px, 0px);
+    }
+
+    100% {
+        clip-path: var(--slice-1);
+        transform: translate(0);
+    }
+}
+
+.zp {
+    display: inline-block;
+    background: transparent;
+    height: 200px;
+    width: 100%;
+    margin-left: -55px;
+    margin-top: 0px;
+    padding: 20px;
+    text-align: center;
+}
+
+#tabs {
+    height: 400px;
+    width: 670px;
+    overflow: hidden;
+    float: left;
+    position: relative;
+}
+
+.tabs {
+    margin-top: 90px;
+}
+
+.title-2 {
+    color: white;
+    text-shadow: 2px 1px 2px rgb(177, 4, 245),3px 1px 2px #fbff01, 0 0 1em rgb(255, 0, 255), 0 0 0.2em rgb(98, 0, 255);
+    font-size: 60px;
+    margin-left: 70%;
+}
+
+.b {
+    text-align: center;
+    border-style: solid;
+    border-color: white;
+    border-width: thick;
+    width: 250px;
+    height: 50px;
+    color: white;
+    /* right: 50%; */
+    /* margin: 40px; */
+    line-height: 46px;
+    font-size: 30px;
+    box-shadow: 0px 0px 10px #acf600,0px 0px 10px #acf600 inset;
+}
+
+.ryq {
+    margin: 100px;
+    color: white;
+    letter-spacing: 200%;
+    line-height: 150%;
+    font-size: 18px;
+}
+
+.zsbox {
+    margin-left: 6%;
+}
+
+.haibao img {
+    width: 100%;
+    height: auto;
+}
+
+.sign-in {
+    background: rgba(26, 2, 75, 0.6);
+    color: white;
+    /* margin:170px auto; */
+    /* padding: 40px; */
+    line-height: 150%;
+    border-style: solid;
+    border-color: #00E6F6;
+    backdrop-filter: blur(5px);
+    z-index: 1;
+    text-align: center;
+    width: 100%;
+}
+
+.sign-in-txt {
+    padding: 40px;
+}
+
+.txtbox {
+    background: rgba(88,87,86,0.4);
+    backdrop-filter: blur(5px);
+    z-index: 1;
+    padding: 10px;
+}
+
+.zsbox {
+    margin: 5px 0;
+    padding: 5px;
+    background: rgba(88,87,86,0.4);
+    backdrop-filter: blur(5px);
+    z-index: 1;
+}
+
+.zs {
+    width: 300px;
+    margin-left: 3.5%;
+}
+
+.fcbox {
+    margin-left: 15%;
+    margin-top: 140px;
+    position: inline-box;
+}
+
+.fc img {
+    width: 80%;
+}
+
+.fc p {
+    color: white;
+    font-size: 18px;
+}
+/* .cydiv {
+  margin-top: 140px;
+}
+.cy {
+  width: 200px;
+  height: auto;
+  background:rgba(255,255,255,0.2);
+  backdrop-filter: blur(3px);
+  margin: 40px 10px 20px 20px;
+  border-top-left-radius: 100px;
+  border-top-right-radius: 100px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  display: none;
+  text-align: center;
+}
+.cy img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  border: #00E6F6 2px solid;
+}
+
+.cy p {
+  font-size: 13px;
+  color: black;
+}
+
+.cy img:hover {
+  border-radius: 20px;
+  transition: .5s;
+}
+.cy {
+  margin: 40px 0;
+  position: flex;
+  justify-content: center;
+  left: 50%;
+  display: inline-block;
+}
+.cy-top {
+  position: absolute;
+  margin-top: 0px;
+  margin-left: 10px;
+  background: linear-gradient(45deg, transparent 3%, #00E6F6 3%, #00E6F6 5%, #fbff01 5%);;
+  height: 30px;
+  width: 100px;
+  color: black;
+  text-align: center;
+  line-height: 30px;
+}
+.cybox {
+  background: rgba(204,204,255,0.3);
+  backdrop-filter: blur(3px);
+  padding: 0 10px 10px 10px;
+  margin: 10px 0;
+  display:flex;
+  overflow:auto;
+}
+.cybox input, .cybox label {
+  color: white;
+  line-height: 30px;
+}
+.cybox label{
+  margin-top:50px;
+}
+.cybox{
+  display:block;
+}
+.cybox label {
+  margin-top: 0px;
+} */
+.ryqtitle {
+    margin-top: 260px;
+    right: 50%;
+}
+
+
+.optionbgc {
+    background-color: black;
+}
+
+
+
+
+.overlay {
+    background: rgba(0,0,0,.7);
+    filter: alpha(opacity=70);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 10000;
+}
+
+.overlayimg {
+    position: absolute;
+    z-index: 10001;
+    /*left:50px;
+      top:30px;*/
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    height: 100%;
+    width: auto;
+}
+
+
+
+.cybox {
+    border: none;
+    background: rgba(204,204,255,0.3);
+    padding: 0 10px 10px 10px;
+    margin: 10px 0;
+    display: flex;
+    overflow: auto;
+    background: rgba(204,204,255,0.3);
+    backdrop-filter: blur(3px);
+}
+
+
+#info_sex{
+width:170px;
+height:auto;
+}
+#info_majorclass {
+    width: 170px;
+    height: auto;
+}
+#info_physics {
+    width: 135px;
+    height: auto;
+}
+
+.cy-top {
+    position: absolute;
+    margin-top: 0px;
+    margin-left: 10px;
+    background: linear-gradient(45deg, transparent 3%, #00E6F6 3%, #00E6F6 5%, #fbff01 5%);
+    height: 30px;
+    width: 10%;
+    color: black;
+    text-align: center;
+    line-height: 30px;
+}
+/*.cy-top2{
+    position:relative;
+    float:right;
+    margin-right:5px;
+    margin-top:0px;
+    color:#99F;
+    line-height:30px;}*/
+.cybox input, .cybox label {
+    color: white;
+    line-height: 30px;
+}
+
+.cy {
+    width: 200px;
+    height: auto; /*paddin?*/
+    background: rgba(255,255,255,0.4);
+    filter: blur();
+    margin: 40px 10px 20px 20px;
+    border-top-left-radius: 100px;
+    border-top-right-radius: 100px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    display: none;
+    text-align: center;
+}
+
+.cybox label {
+    margin-top: 50px;
+}
+
+.cy-check {
+    margin-top: 50px;
+}
+
+#cycheck:checked ~ .cy {
+    display: block;
+}
+
+.cy img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: #00E6F6 2px solid;
+}
+
+.cy p {
+    font-size: 13px;
+    color: #333;
+}
+
+.cy img:hover {
+    border-radius: 20px;
+    transition: .5s;
+}
+
+
+
+
+
+
+#info_lz {
+    width: 7%;
+    height: auto;
+    font-size: 15px;
+}
+
+#xk {
+    /* visibility: collapse; */
+    display: block;
+}
+
+#look_button input {
+    width: 70%;
+    height: 100px;
+    font-size: 4rem;
+}
+
+#dmin_button input {
+    width: 300px;
+    height: 100px;
+    font-size: 4rem;
+}
+
+#amend_button input {
+    width: 300px;
+    height: 100px;
+    font-size: 4rem;
+}
+
+#affirm_button input {
+    width: 300px;
+    height: 100px;
+    font-size: 4rem;
+}
+.bm {
+    border: none;
+    border-bottom: 0.1rem solid white;
+    background-color: transparent;
+    color: white;
+}
+
+    .bm:hover, .bm:focus {
+        box-shadow: 3px 3px #00E6F6, -0.4em 0 .4em #acf600;
+        outline: none;
+    }
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width:960px) {
+
+ #xk{
+        display: block;
+    }
+   
+    #look_button input {
+        width: 70%;
+        height: 100px;
+        font-size: 4rem;
+    }
+    #admin_button input {
+        width: 70%;
+        height: 100px;
+        font-size: 4rem;
+    }
+    #amend_button input {
+        width: 300px;
+        height: 100px;
+        font-size: 4rem;
+    }
+    #affirm_button input {
+        width:300px;
+        height: 100px;
+        font-size: 4rem;
+    }
+
+    .frame {
+        /* height: 100%;
+    width: 100%; */
+        display: flexbox;
+        /* margin: 0 auto;
+    width: 100%; */
+        float: left;
+        left: 50%;
+    }
+    /* header{
+    height: 300px;
+  } */
+    .blank {
+        width: 0px;
+    }
+
+    .zzcx-1 {
+        margin-top: 75px;
+        font-size: 90px;
+    }
+
+    .sec {
+        font-size: 60px;
+        line-height: 250px;
+    }
+
+    .logo {
+        margin-top: 300px;
+        height: 150%;
+        width: auto;
+        margin-left: 5%;
+    }
+
+    .logoimg {
+        height: 150%;
+        width: auto;
+    }
+
+    .zzcx-2 {
+        margin-top: 80px;
+        font-size: 100px;
+        letter-spacing: 18px;
+        right: 50%;
+        margin-left: 5%;
+    }
+
+    .title {
+        /* right:50%; */
+        width: 100%;
+    }
+
+    .title-1 {
+        font-size: 100px;
+        margin-top: 180px;
+        /* margin-left: 46%; */
+        right: 50%;
+    }
+
+    .intro {
+        width: 100%;
+        height: auto;
+        padding: 50px;
+        line-height: 130%;
+        letter-spacing: 100%;
+        font-size: 70px;
+    }
+
+    button, button::after {
+        width: 1160px;
+        height: 224px;
+        font-size: 112px;
+        box-shadow: 24px 0px 0px #00E6F6;
+        /* margin-left: 300px; */
+        right: -10%;
+    }
+
+        button::after {
+            text-shadow: -12px -12px 0px #F8F005, 12px 12px 0px #00E6F6;
+        }
+
+    .title-2 {
+        visibility: collapse;
+    }
+
+    .zp {
+        visibility: collapse;
+    }
+
+    .b {
+        width: 1000px;
+        height: 200px;
+        /* margin: 80px; */
+        line-height: 200px;
+        box-shadow: 0px 0px 40px #acf600,0px 0px 40px #acf600 inset;
+        /* margin-left: 22%; */
+    }
+
+    .ryqh {
+        font-size: 112px;
+        /* right: 50%; */
+    }
+
+    .ryq {
+        width: 90%;
+        /* margin-left: 80px; */
+        right: 50%;
+        font-size: 70px;
+    }
+
+    .zs {
+        width: 93%;
+    }
+
+    .fcbox {
+        margin-left: 0%;
+    }
+
+    .fc img {
+        width: 100%;
+        margin-left: 4%;
+    }
+
+    .fc p {
+        font-size: 60px;
+    }
+
+    .haibao img {
+        margin-left: 3%;
+    }
+
+    .sign-in {
+        font-size: 500%;
+        /* width:100%; */
+        right: 50%;
+        margin-left: 3%; /*右边填不满*/
+    }
+
+    .bm {
+        width: 800px;
+        height: 100px;
+        font-size: 70px;
+    }
+
+    .ewm {
+        height: 450px;
+        width: 450px;
+    }
+    #info_sex {
+        width: 808px;
+        height: 106px;
+        font-size: 70px;
+    }
+
+    #info_majorclass {
+        width: 800px;
+        height: 100px;
+        font-size: 70px;
+    }
+
+    #info_physics {
+        width: 790px;
+        height: 100px;
+        font-size: 70px;
+    }
+    #info_two {
+        width: 570px;
+        height: 100px;
+        font-size: 70px;
+    }
+     .txtbox {
+            padding: 0%;
+        }
+
+    .fc p {
+        margin-left: 0;
+    }
+
+
+
+
+
+
+
+
+    /* --------------------------以下复制-------------------------- */
+
+
+
+    /* .overlayimg{
+    width:100%;
+    height:auto;
+} */
+
+
+    .cybox {
+        display: block;
+        width: 100%;
+        height: auto;
+        margin-top: 20%;
+        margin-left: 3%;
+    }
+
+    .cy {
+        margin: 40px 0;
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 100%;
+        height: auto;
+    }
+
+        .cy img {
+            width: 100%;
+            height: auto;
+        }
+
+        .cy p, .cy h3, .cy-top {
+            font-size: 400%;
+        }
+
+    .cy-top {
+        height: 100px;
+        width: 35%;
+        line-height: 140%;
+    }
+
+    .cybox label {
+        margin-top: 0px;
+        font-size: 400%;
+    }
+
+    .cy-check {
+        margin-top: 200px;
+    }
+
+    #cycheck {
+        width: 50px;
+        height: 50px;
+    }
+
+
+
+
+    #info_lz {
+        width: 26%;
+        font-size: 55px;
+    }
+
+    body {
+        background-size: 100% 100%;
+    }
+}
